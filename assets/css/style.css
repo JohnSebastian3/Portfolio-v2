@@ -239,7 +239,7 @@ h1.heading-margin {
 }
 
 .project-title {
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 .project-buttons {
@@ -247,7 +247,8 @@ h1.heading-margin {
   /* width: 75%; */
   justify-content: space-between;
   align-items: center;
-  gap: 3em;
+  gap: 1em;
+  font-size: .5em;
 }
 
 
@@ -560,6 +561,10 @@ input:focus::placeholder, textarea:focus::placeholder {
       justify-content: space-around;
     }
 
+    .project-buttons .button-light {
+      width: 150px;
+    }
+
 
 
 
@@ -676,6 +681,7 @@ input:focus::placeholder, textarea:focus::placeholder {
       padding-left: 20px;
       padding-right: 20px;
     }
+    
 
   /******************************************
   /* SERVICES
@@ -748,5 +754,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
   .divider {
     display: none;
+  }
+  .project-buttons .button-light {
+    padding: .5em;
+    width: auto;
   }
 }
