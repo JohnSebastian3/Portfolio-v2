@@ -239,7 +239,7 @@ h1.heading-margin {
 }
 
 .project-title {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .project-buttons {
@@ -681,6 +681,9 @@ input:focus::placeholder, textarea:focus::placeholder {
       padding-left: 20px;
       padding-right: 20px;
     }
+    .project-title {
+  font-size: 1em;
+}
     
 
   /******************************************
