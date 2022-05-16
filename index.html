@@ -49,7 +49,7 @@
 					</section>
 
 					<section class="profile-image">
-						<!-- <img src="./images/profile.png" alt=""> -->
+						<img src="./images/professionalPic.jpg" alt="Profile Picture" class="bigger-img">
 					</section>
 
 				</div>
@@ -95,7 +95,7 @@
 					<div class="grid project-grid">
 						<div class="project">
 							<div class="overlay-box">
-								<img src="./images/library.png">
+								<img src="./images/library.png" alt="Image of Project">
 								<div class="overlay">
 									<div class="project-title">Library App</div>
 									<div class="project-buttons">
@@ -107,7 +107,7 @@
 						</div>
 						<div class="project">
 							<div class="overlay-box">
-								<img src="./images/admin-dashboard.png">
+								<img src="./images/admin-dashboard.png" alt="Image of Project">
 								<div class="overlay">
 									<div class="project-title">Admin Dashboard</div>
 									<div class="project-buttons">
@@ -119,7 +119,7 @@
 						</div>
 						<div class="project">
 							<div class="overlay-box">
-								<img src="./images/cleave.png">
+								<img src="./images/cleave.png" alt="Image of Project">
 								<div class="overlay">
 									<div class="project-title">Tip Calculator</div>
 									<div class="project-buttons">
@@ -131,7 +131,7 @@
 						</div>
 						<div class="project">
 							<div class="overlay-box">
-								<img src="./images/wireframe.png">
+								<img src="./images/wireframe.png" alt="Image of Project">
 								<div class="overlay">
 									<div class="project-title">Business Wireframe</div>
 									<div class="project-buttons">
@@ -143,7 +143,7 @@
 						</div>
 						<div class="project">
 							<div class="overlay-box">
-								<img src="./images/salon-v2.png">
+								<img src="./images/salon-v2.png" alt="Image of Project">
 								<div class="overlay">
 									<div class="project-title">Luxury Salon</div>
 									<div class="project-buttons">
@@ -155,7 +155,7 @@
 						</div>
 						<div class="project">
 							<div class="overlay-box">
-								<img src="./images/sign-up.png">
+								<img src="./images/sign-up.png" alt="Image of Project">
 								<div class="overlay">
 									<div class="project-title">Sign Up Form</div>
 									<div class="project-buttons">
@@ -202,7 +202,7 @@
 			<section id="about">
 				<div class="about-box container section-padding">	
 					<section class="profile-image flex">
-						<img src="./images/profile.png" alt="">
+						<img src="./images/professionalPic.jpg" alt="Profile Picture">
 						<div class="logo-box flex">
 							<a href="https://www.linkedin.com/in/john-guerrero-222790156/" target="_blank"><i class="fa-brands fa-linkedin-in logo-small"></i></a>
 							<a href="https://github.com/JohnSebastian3" target="_blank"><i class="fa-brands fa-github logo-small"></i></a>
@@ -228,30 +228,34 @@
 	
 					<h2 class="heading-margin">Get In Touch!</h2>
 					<p>I am accepting new freelance clients, job opportunities, or coffee chats.</p>
-					<p>Feel free to email me at: john.guerrero@gmail.com <br> Or, send me a message below, or contact me on <a href='#'>LinkedIn</a> or <a href='#'>Twitter</a>.</p>
-					<form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+					<p>Feel free to email me at <strong>johnsebastiandev@gmail.com</strong>, <br> send me a message below, or contact me on <a href='https://www.linkedin.com/in/john-guerrero-222790156'>LinkedIn</a> or <a href='https://twitter.com/SebaCodes'>Twitter</a>.</p>
+					<form name="contact" method="POST" data-netlify="true" onSubmit="submit" id="form">
 						<section class="input-area">
 
 							<section class="person-info flex">
 								<section class="name">
-									<input name="name" type="text" placeholder="Name" required>
+									<label for="name">Name</label>
+									<input name="name" id="name" type="text" placeholder="Name" required>
 								</section>
 								<section class="email">
-									<input name="email" type="email" placeholder="Email" required>
+									<label for="email">Email</label>
+									<input name="email" id="email" type="email" placeholder="Email" required>
 								</section>
 							</section>
 
 							<section class="message">
-								<textarea name="message" placeholder="Message"></textarea>
+								<label for="message">Message</label>
+								<textarea name="message" id="message" placeholder="Message"></textarea>
 							</section>
 
 						</section>
 						<div class="form-buttons">
-							<ul class="actions">
-								<li><input type="submit" value="Send" /></li>
-							</ul>
-							<!-- <button class="button-dark" type="submit">Send</button>
-							<button class="button-light">Reset</button> -->
+							<!-- <ul class="actions">
+								<li><input type="submit" class="submit-button" value="Send" /></li>
+								<li><input type="submit" class="reset-button" value="Reset" /></li>
+							</ul> -->
+							<button class="button-dark" type="submit">Send</button>
+							<button class="button-light" id="reset-button">Reset</button>
 
 						</div>
 						
@@ -279,6 +283,6 @@
 			</footer>
 
 
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
 	</body>
 </html>
