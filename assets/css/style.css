@@ -100,6 +100,7 @@ button {
 .profile-image img {
   width: 250px;
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 
@@ -537,7 +538,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   
 
   
-  @media all and (max-width: 1300px) {
+  @media all and (max-width: 1306px) {
 
   /******************************************
   /* HERO
@@ -565,8 +566,11 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
   
     .hero-ul {
-      width:100%;
+      /* width:100%; */
       justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
     }
 
     .project-buttons .button-light {
@@ -633,7 +637,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   /* ABOUT
   /*******************************************/
   .about-box {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 5rem;
   }
@@ -658,7 +662,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 
     h1 {
-      font-size: 3.4rem;
+      font-size: 3.5rem;
     }
     h2 {
       font-size: 2.5rem;
@@ -675,13 +679,13 @@ input:focus::placeholder, textarea:focus::placeholder {
     
     
     a {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-decoration: none;
       color: #000;
       display: inline-block;
     }
     button {
-      font-size: 1.5rem; 
+      font-size: 2rem; 
       /* margin-right: 2rem; */
     }
 
@@ -699,6 +703,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   /*******************************************/
   .hero-ul {
     flex-direction: column;
+    width: 50%;
     gap: 3rem;
   }
 
