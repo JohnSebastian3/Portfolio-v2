@@ -34,9 +34,7 @@ body {
   line-height: 1.2;
   color: #2b2b2b;
 }
-header, main, #services {
-  
-}
+
 h1, h2, h3 {
   font-family: 'Roboto Mono';
 }
@@ -99,7 +97,10 @@ button {
 .logo-large {
   font-size: 10rem;
 }
-
+.profile-image img {
+  width: 250px;
+  border-radius: 50%;
+}
 
 
 
@@ -141,7 +142,8 @@ h1.heading-margin {
 .hero-ul {
   display: flex;
   width:80%;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap : 2rem;
 }
 
 .hero-ul li {
@@ -153,29 +155,29 @@ h1.heading-margin {
 .button-light {
   background-color: transparent;
   border-radius: 5px;
-  padding: .75em 1em;
+  padding: .5em .75em;
   width: 200px;
   /* color: #fafafa; */
-  border: 1px solid #2b2b2b;
-  transition: background-color 300ms, color 300ms, border 300ms;
+  border: 1px solid rgba(43, 43, 43, 0.8);
+  transition: background-color 200ms, color 200ms, border 200ms;
 }
 
 .button-light:hover {
   background-color: #5680e9;
   color: #fafafa;
-  border: 1px solid #5680e9;
+  /* border: 1px solid #5680e9; */
 }
 
 
 .button-dark {
   background-color: #5680e9;
   border-radius: 5px;
-  padding: .75em 1em;
+  padding: .5em .75em;
   width: 200px;
   /* color: #fafafa; */
   border: 1px solid #fdfdfd;
   color: #fafafa;
-  transition: background-color 300ms, color 300ms, border 300ms;
+  transition: background-color 200ms, color 200ms, border 200ms;
 }
 
 .button-dark:hover {
@@ -183,7 +185,9 @@ h1.heading-margin {
   border: 1px solid #7fa3ff;
 }
 
-
+.bigger-img {
+  transform: scale(1.25);
+}
 
 
 /******************************************
@@ -255,12 +259,12 @@ h1.heading-margin {
 .overlay-box {
   margin-bottom: 1.5rem;
   position: relative;
-  transition: transform 300ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 .overlay > * {
   transform: translateY(20px);
-  transition: transform 300ms;
+  transition: transform 200ms;
 }
 
 .overlay-box:hover {
@@ -326,7 +330,8 @@ h1.heading-margin {
 /*******************************************/
 
 .skills-flex {
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
 }
 #skills {
   background-color: #eee;
@@ -471,6 +476,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-bottom: 4rem;
 }
 
+.contact-box button {
+  cursor: pointer;
+}
 
 
 
@@ -502,7 +510,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .main-footer .logo-box {
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .copyright {
@@ -712,22 +720,6 @@ input:focus::placeholder, textarea:focus::placeholder {
       flex-direction: column;
     }
 
-    /******************************************
-  /* SKILLS
-  /*******************************************/
-
-    .skills-flex {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      row-gap: 3rem;
-      column-gap: 3rem;
-    }
-    .javascript {
-      grid-column: 1/3;
-    }
-
-
      /******************************************
   /* ABOUT
   /*******************************************/
@@ -751,6 +743,26 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 
 @media all and (max-width: 500px) {
+  
+    /******************************************
+  /* SKILLS
+  /*******************************************/
+
+  .skills-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 3rem;
+  }
+  .javascript {
+    grid-column: 1/3;
+  }
+  .logo-large {
+    font-size: 7.5rem;
+  }
+
+
   .copyright {
     flex-direction: column;
     align-items: center;
