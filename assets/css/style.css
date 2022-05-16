@@ -45,6 +45,10 @@ h2 {
   font-size: 4rem;
   text-align: center;
 }
+.project h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
 h3 {
   font-size: 2.5rem;
 }
@@ -64,6 +68,10 @@ a {
 button {
   font-size: 2rem; 
   margin-right: 3rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .container {
@@ -158,6 +166,7 @@ h1.heading-margin {
   border-radius: 5px;
   padding: .5em .75em;
   width: 200px;
+  text-align: center;
   /* color: #fafafa; */
   border: 1px solid rgba(43, 43, 43, 0.8);
   transition: background-color 200ms, color 200ms, border 200ms;
@@ -197,7 +206,6 @@ h1.heading-margin {
 
 .grid {
   display: grid;
-
 }
 
 
@@ -205,6 +213,7 @@ h1.heading-margin {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   /* background-color: rgba(30, 49, 70, 0.1); */
   border-radius: 10px;
   width: 100%;
@@ -212,10 +221,36 @@ h1.heading-margin {
   padding: 2rem;
   /* height: 75rem; */
 }
+.view-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.view-more button {
+  font-size: 2.4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
 .project {
   width: 90%;
   text-align: center;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+.learn-more{
+  display: flex;
+  gap: 2rem;
+}
+.learn-more a{
+  width: 150px;
 }
 
 .project img {
