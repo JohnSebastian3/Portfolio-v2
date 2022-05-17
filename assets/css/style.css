@@ -148,7 +148,7 @@ h1.heading-margin {
   display: flex;
   width:80%;
   justify-content: flex-start;
-  gap : 2rem;
+  gap : 3rem;
 }
 
 .hero-ul li {
@@ -168,11 +168,7 @@ h1.heading-margin {
   transition: background-color 200ms, color 200ms, border 200ms;
 }
 
-.button-light:hover {
-  background-color: #5680e9;
-  color: #fafafa;
-  /* border: 1px solid #5680e9; */
-}
+
 
 
 .button-dark {
@@ -186,14 +182,13 @@ h1.heading-margin {
   transition: background-color 200ms, color 200ms, border 200ms;
 }
 
-.button-dark:hover {
-  background-color: #7fa3ff;
-  border: 1px solid #7fa3ff;
-}
+
 
 .bigger-img {
   transform: scale(1.25);
 }
+
+
 
 
 /******************************************
@@ -566,7 +561,17 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* MEDIA QUERIES
 /*******************************************/
 
+@media (hover: hover) {
+  .button-light:hover {
+    background-color: #5680e9;
+    color: #fafafa;
+  }
 
+  .button-dark:hover {
+    background-color: #7fa3ff;
+    border: 1px solid #7fa3ff;
+  }
+}
 
   
   

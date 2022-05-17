@@ -4,15 +4,17 @@ const resetButton = document.querySelector('#reset-button');
 
 const viewButton = document.querySelector('.view-more button');
 
-resetButton.addEventListener('click', resetForm);
+resetButton.addEventListener('mouseup', resetForm);
+
 
 viewButton.addEventListener('click', expandProjects);
 let isExpanded = false;
 
 function resetForm() {
   form.reset();
-  nameInput.blur();
 }
+
+
 
 function expandProjects() {
   let projects = document.querySelectorAll('.secondary');
@@ -31,6 +33,11 @@ function expandProjects() {
     isExpanded = false;
   }
 }
+
+
+
+
+
 
 
 
