@@ -70,10 +70,6 @@ button {
   margin-right: 3rem;
 }
 
-.hidden {
-  display: none;
-}
-
 .container {
   max-width: 1750px;
   padding: 0 100px;
@@ -218,7 +214,7 @@ h1.heading-margin {
   border-radius: 10px;
   width: 100%;
   row-gap: 8rem;
-  padding: 2rem;
+  padding: 2rem 0;
   /* height: 75rem; */
 }
 .view-more {
@@ -326,6 +322,9 @@ h1.heading-margin {
 
 .overlay:hover > * {
   transform: translateY(0);
+}
+.mobile-header {
+  display: none;
 }
 
 
@@ -642,19 +641,30 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
 
   }
-  
-/******************************************
+    /******************************************
 /* GRID PROJECTS
 /*******************************************/
+.grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+  
+@media all and (max-width: 1200px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 1rem;
   }
+  .description {
+      margin-bottom: 10rem;
+    }
+    .project {
+      width: 75%;
+      margin: 0 auto;
+    }
 
-
-
-
-
+}
 
 
 @media all and (max-width: 1000px) {
@@ -663,10 +673,33 @@ input:focus::placeholder, textarea:focus::placeholder {
   /******************************************
   /* GRID PROJECTS
   /*******************************************/
-    .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      row-gap: 1rem;
+    } */
+    .project {
+      width: 100%;
     }
+    .description h3,
+    .description p {
+      display: none;
+    }
+ 
+    .learn-more {
+      gap: 4rem;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .mobile-header {
+      display: block;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+
 
   /******************************************
   /* ABOUT
@@ -781,8 +814,18 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 }
 
+@media all and (max-width: 650px) {
+  .learn-more a {
+    font-size: 1.4rem;
+  }
+ 
+}
+
 
 @media all and (max-width: 500px) {
+
+  /* GRID PROJECTS */
+ 
   
     /******************************************
   /* SKILLS
@@ -814,4 +857,14 @@ input:focus::placeholder, textarea:focus::placeholder {
     padding: .5em;
     width: auto;
   }
+}
+
+@media all and (max-width: 480px) {
+  .learn-more a {
+    width: 100px;
+  }
+}
+/* IMPORTANT STYLES */
+.hidden {
+  display: none;
 }
