@@ -401,6 +401,10 @@ h1.heading-margin {
   margin-bottom: 4rem;
 }
 
+.about-text p {
+  margin-bottom: 3rem;
+}
+
 .logo-box {
  justify-content: space-between;
 }
@@ -746,7 +750,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
     
     p {
-      line-height: 1.5;
+      line-height: 1.7;
     }
     
     
