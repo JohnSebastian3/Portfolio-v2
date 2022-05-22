@@ -1,4 +1,4 @@
-# Portfolio-v2
+# Personal Portfolio
 This is the second iteration of my Personal Portfolio that highlights my work and services. It includes my contact information and a little bit about me.
 
 **Link to project:** https://johnsebastiandev.netlify.app/
